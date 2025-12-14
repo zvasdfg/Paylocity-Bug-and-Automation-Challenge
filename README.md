@@ -47,9 +47,12 @@ These documents provide:
 ## 🐞 Individual Bug Evidence
 
 Detailed bug reports with supporting evidence (screenshots, logs, request/response samples) are available in the following directories:
+```text
 Bugs/
 ├── API/
 └── UI/
+```
+
 Each bug includes:
 - Clear reproduction steps
 - Evidence
@@ -63,10 +66,11 @@ Each bug includes:
 The test cases that were automated as part of this project are also available in **test case format** for review and traceability.
 
 They can be found here:
+```text
 Test Cases/
 ├── API/
 └── UI/
-
+```
 These documents describe:
 - Test objectives
 - Preconditions
