@@ -1,0 +1,31 @@
+2025-12-14 05:08:14 | INFO | src.pages.dashboard_page | Click on Add Employee BTN
+2025-12-14 05:08:14 | INFO | src.pages.dashboard_page | firstname set
+2025-12-14 05:08:15 | INFO | src.pages.dashboard_page | Lastname set
+2025-12-14 05:08:15 | INFO | src.pages.dashboard_page | Dependants Set
+2025-12-14 05:08:15 | INFO | src.pages.dashboard_page | Click on Add BTN
+2025-12-14 05:08:15 | INFO | src.pages.dashboard_page | Employee succesfully added
+2025-12-14 05:08:24 | INFO | src.pages.dashboard_page | Click on Add Employee BTN
+2025-12-14 05:08:24 | INFO | src.pages.dashboard_page | firstname set
+2025-12-14 05:08:24 | INFO | src.pages.dashboard_page | Lastname set
+2025-12-14 05:08:24 | INFO | src.pages.dashboard_page | Dependants Set
+2025-12-14 05:08:24 | INFO | src.pages.dashboard_page | Click on Add BTN
+2025-12-14 05:08:24 | INFO | src.pages.dashboard_page | Employee succesfully added
+2025-12-14 05:08:37 | INFO | src.pages.dashboard_page | Click on Add Employee BTN
+2025-12-14 05:08:37 | INFO | src.pages.dashboard_page | firstname set
+2025-12-14 05:08:37 | INFO | src.pages.dashboard_page | Lastname set
+2025-12-14 05:08:37 | INFO | src.pages.dashboard_page | Dependants Set
+2025-12-14 05:08:37 | INFO | src.pages.dashboard_page | Click on Add BTN
+2025-12-14 05:08:37 | INFO | src.pages.dashboard_page | Employee succesfully added
+2025-12-14 05:08:46 | WARNING | src.pages.dashboard_page | Login Succesfull
+2025-12-14 05:08:47 | INFO | src.pages.dashboard_page | Net pay validated successfully | net=1942.31 gross=2000.0 benefits=57.69
+2025-12-14 05:08:56 | WARNING | src.pages.dashboard_page | Login Succesfull
+2025-12-14 05:08:57 | INFO | src.pages.dashboard_page | Click on Edit Employee BTN
+2025-12-14 05:08:57 | INFO | src.pages.dashboard_page | firstname set
+2025-12-14 05:08:57 | INFO | src.pages.dashboard_page | Lastname set
+2025-12-14 05:08:57 | INFO | src.pages.dashboard_page | Dependants Set
+2025-12-14 05:08:57 | INFO | src.pages.dashboard_page | Click on Update BTN
+2025-12-14 05:08:57 | INFO | src.pages.dashboard_page | Employee succesfully updated
+2025-12-14 05:09:06 | WARNING | src.pages.dashboard_page | Login Succesfull
+2025-12-14 05:09:06 | INFO | src.pages.dashboard_page | Click on Edit Employee BTN
+2025-12-14 05:09:06 | INFO | src.pages.dashboard_page | Click on Edit Employee BTN
+2025-12-14 05:09:06 | INFO | src.pages.dashboard_page | Employee succesfully deleted
