@@ -16,6 +16,52 @@ The framework follows:
 It is intentionally kept **simple, scalable, and CI/CD friendly**, suitable for technical assessments and real-world projects.
 
 ---
+## 📊 Defect Analysis Reports
+
+At the **root of this repository**, you will find the following defect analysis documents:
+
+- **Employees API – Defect Analysis Report**
+- **Benefits Dashboard – UX & Business Rule Defect Report**
+
+These documents provide:
+- A consolidated view of the identified issues
+- Description of functional, technical, and business rule defects
+- Expected vs actual behavior
+- Impact and observations
+
+---
+
+## 🐞 Individual Bug Evidence
+
+Detailed bug reports with supporting evidence (screenshots, logs, request/response samples) are available in the following directories:
+Bugs/
+├── API/
+└── UI/
+Each bug includes:
+- Clear reproduction steps
+- Evidence
+- Observed behavior
+- Expected behavior
+
+---
+
+## 🧪 Automated Test Cases
+
+The test cases that were automated as part of this project are also available in **test case format** for review and traceability.
+
+They can be found here:
+Test Cases/
+├── API/
+└── UI/
+
+These documents describe:
+- Test objectives
+- Preconditions
+- Steps
+- Expected results
+
+---
+
 
 ## 🧱 Tech Stack
 
