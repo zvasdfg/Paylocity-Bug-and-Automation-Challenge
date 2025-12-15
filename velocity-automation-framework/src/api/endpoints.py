@@ -1,1 +1,0 @@
-EMPLOYEES_ENDPOINT = "/employees"
