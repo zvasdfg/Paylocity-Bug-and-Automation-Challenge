@@ -318,6 +318,7 @@ The report includes:
 ✔ Logging instead of print statements
 ✔ API and UI validation in the same framework
 ✔ CI/CD ready
+✔ Security implementation getting Users and paswords from .env file
 
 ---
 
