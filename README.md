@@ -94,96 +94,89 @@ These documents describe:
 ## 📂 Project Structure
 
 ```text
-Velocity/
-├── Bugs/
-│   ├── API/
-│   │   ├── BUG-001.txt
-│   │   ├── BUG-002.txt
-│   │   ├── BUG-003.txt
-│   │   ├── BUG-004.txt
-│   │   ├── BUG-005.txt
-│   │   ├── BUG-006.txt
-│   │   ├── BUG-007.txt
-│   │   ├── BUG-008.txt
-│   │   ├── BUG-009.txt
-│   │   ├── BUG-010.txt
-│   ├── UI/
-│   │   ├── BUG-001.txt
-│   │   ├── BUG-002.txt
-│   │   ├── BUG-003.txt
-│   │   ├── BUG-004.txt
-│   │   ├── BUG-005.txt
-│   │   ├── BUG-006.txt
-│   │   ├── BUG-007.txt
-│   │   ├── BUG-008.txt
-├── Test Cases/
-│   ├── API/
-│   │   ├── TC-API-EMP-001.xlsx
-│   │   ├── TC-API-EMP-002.xlsx
-│   │   ├── TC-API-EMP-003.xlsx
-│   │   ├── TC-API-EMP-004.xlsx
-│   │   ├── TC-API-EMP-005.xlsx
-│   │   ├── TC-API-EMP-006.xlsx
-│   │   ├── TC-API-EMP-007.xlsx
-│   │   ├── TC-API-EMP-008.xlsx
-│   │   ├── TC-API-EMP-009.xlsx
-│   │   ├── TC-API-EMP-010.xlsx
-│   │   ├── TC-API-EMP-011.xlsx
-│   │   ├── TC-API-EMP-012.xlsx
-│   │   ├── TC-API-EMP-013.xlsx
-│   │   ├── TC-API-EMP-014.xlsx
-│   │   ├── TC-API-EMP-015.xlsx
-│   ├── UI/
-│   │   ├── TC-01 Add employee with no dependents.xlsx
-│   │   ├── TC-02 Add employee with one dependent.xlsx
-│   │   ├── TC-03 Add employee with multiple dependents.xlsx
-│   │   ├── TC-04 Validate paycheck deduction calculation.xlsx
-│   │   ├── TC-05 Edit employee dependents.xlsx
-│   │   ├── TC-06 Delete employee.xlsx
-│   │   ├── TC-07 Add employee with negative dependents.xlsx
-│   │   ├── TC-08 Add employee with very large number of dependents.xlsx
-├── velocity-automation-framework/
-│   ├── .env
-│   ├── pytest.ini
-│   ├── README.md
-│   ├── requirements.txt
-│   ├── src/
-│   │   ├── config/
-│   │   │   ├── config.yaml
-│   │   │   ├── environment.py
-│   │   ├── core/
-│   │   │   ├── api_client.py
-│   │   │   ├── base_page.py
-│   │   │   ├── driver_factory.py
-│   │   │   ├── __init__.py
-│   │   ├── pages/
-│   │   │   ├── dashboard_page.py
-│   │   │   ├── login_page.py
-│   │   ├── services/
-│   │   │   ├── employee_api.py
-│   │   ├── utils/
-│   │   │   ├── assertions.py
-│   │   │   ├── logger.py
-│   │   ├── __init__.py
-│   ├── tests/
-│   │   ├── api/
-│   │   │   ├── TC-API-EMP-01.py
-│   │   │   ├── TC-API-EMP-02.py
-│   │   │   ├── TC-API-EMP-03.py
-│   │   │   ├── TC-API-EMP-04.py
-│   │   │   ├── TC-API-EMP-05.py
-│   │   │   ├── TC-API-EMP-07.py
-│   │   │   ├── TC-API-EMP-08.py
-│   │   │   ├── TC-API-EMP-10.py
-│   │   ├── ui/
-│   │   │   ├── TC-01.py
-│   │   │   ├── TC-02.py
-│   │   │   ├── TC-03.py
-│   │   │   ├── TC-04.py
-│   │   │   ├── TC-05.py
-│   │   │   ├── TC-06.py
-│   │   │   ├── test_login.py
-
+├── src/
+│   ├── __pycache__/
+│   │   └── __init__.cpython-313.pyc (0.2 KB)
+│   ├── config/
+│   │   ├── __pycache__/
+│   │   │   └── environment.cpython-313.pyc (2.6 KB)
+│   │   ├── config.yaml (0.2 KB)
+│   │   └── environment.py (1.5 KB)
+│   ├── core/
+│   │   ├── __pycache__/
+│   │   │   ├── __init__.cpython-313.pyc (0.2 KB)
+│   │   │   ├── api_client.cpython-313.pyc (1.0 KB)
+│   │   │   ├── base_page.cpython-313.pyc (1.8 KB)
+│   │   │   └── driver_factory.cpython-313.pyc (1.2 KB)
+│   │   ├── __init__.py (0.0 KB)
+│   │   ├── base_page.py (0.6 KB)
+│   │   └── driver_factory.py (0.6 KB)
+│   ├── pages/
+│   │   ├── __pycache__/
+│   │   │   ├── dashboard_page.cpython-313.pyc (6.1 KB)
+│   │   │   └── login_page.cpython-313.pyc (1.4 KB)
+│   │   ├── dashboard_page.py (3.5 KB)
+│   │   └── login_page.py (0.5 KB)
+│   ├── utils/
+│   │   ├── __pycache__/
+│   │   │   ├── assertions.cpython-313.pyc (4.1 KB)
+│   │   │   └── logger.cpython-313.pyc (2.1 KB)
+│   │   ├── assertions.py (3.0 KB)
+│   │   └── logger.py (1.2 KB)
+│   └── __init__.py (0.0 KB)
+├── tests/
+│   ├── api/
+│   │   ├── __pycache__/
+│   │   │   ├── TC-API-EMP-01_Create_Employee_Mandatory_Data.cpython-313-pytest-8.0.0.pyc (6.2 KB)
+│   │   │   ├── TC-API-EMP-01.cpython-313-pytest-8.0.0.pyc (6.2 KB)
+│   │   │   ├── TC-API-EMP-02_Create_Employee_Max_Dependants.cpython-313-pytest-8.0.0.pyc (6.2 KB)
+│   │   │   ├── TC-API-EMP-02.cpython-313-pytest-8.0.0.pyc (6.0 KB)
+│   │   │   ├── TC-API-EMP-03_Create_Employee_Negative_Dependants.cpython-313-pytest-8.0.0.pyc (3.0 KB)
+│   │   │   ├── TC-API-EMP-03.cpython-313-pytest-8.0.0.pyc (2.7 KB)
+│   │   │   ├── TC-API-EMP-04_Create_Employee_Overflow_Dependants.cpython-313-pytest-8.0.0.pyc (3.0 KB)
+│   │   │   ├── TC-API-EMP-04.cpython-313-pytest-8.0.0.pyc (2.7 KB)
+│   │   │   ├── TC-API-EMP-05_Get_Employee_List.cpython-313-pytest-8.0.0.pyc (2.9 KB)
+│   │   │   ├── TC-API-EMP-05.cpython-313-pytest-8.0.0.pyc (2.6 KB)
+│   │   │   ├── TC-API-EMP-07_Create_Employee_WIthout_Mandatory_Data.cpython-313-pytest-8.0.0.pyc (8.3 KB)
+│   │   │   ├── TC-API-EMP-07.cpython-313-pytest-8.0.0.pyc (8.1 KB)
+│   │   │   ├── TC-API-EMP-08_Get_Single_Employee.cpython-313-pytest-8.0.0.pyc (6.0 KB)
+│   │   │   ├── TC-API-EMP-08.cpython-313-pytest-8.0.0.pyc (5.8 KB)
+│   │   │   ├── TC-API-EMP-10_Modify_Existing_Employee.cpython-313-pytest-8.0.0.pyc (5.4 KB)
+│   │   │   ├── TC-API-EMP-10.cpython-313-pytest-8.0.0.pyc (5.2 KB)
+│   │   │   └── test_employee_api.cpython-313-pytest-8.0.0.pyc (6.0 KB)
+│   │   ├── TC-API-EMP-01_Create_Employee_Mandatory_Data.py (1.9 KB)
+│   │   ├── TC-API-EMP-02_Create_Employee_Max_Dependants.py (1.9 KB)
+│   │   ├── TC-API-EMP-03_Create_Employee_Negative_Dependants.py (1.3 KB)
+│   │   ├── TC-API-EMP-04_Create_Employee_Overflow_Dependants.py (1.3 KB)
+│   │   ├── TC-API-EMP-05_Get_Employee_List.py (1.2 KB)
+│   │   ├── TC-API-EMP-07_Create_Employee_WIthout_Mandatory_Data.py (1.8 KB)
+│   │   ├── TC-API-EMP-08_Get_Single_Employee.py (1.6 KB)
+│   │   └── TC-API-EMP-10_Modify_Existing_Employee.py (1.6 KB)
+│   └── ui/
+│       ├── __pycache__/
+│       │   ├── TC-01_Add_Employee_No_Deps.cpython-313-pytest-8.0.0.pyc (2.0 KB)
+│       │   ├── TC-01.cpython-313-pytest-8.0.0.pyc (1.8 KB)
+│       │   ├── TC-02_Add_Employee_SIngle_Dep.cpython-313-pytest-8.0.0.pyc (2.0 KB)
+│       │   ├── TC-02.cpython-313-pytest-8.0.0.pyc (1.8 KB)
+│       │   ├── TC-03_Add_Employee_Multiple_Deps.cpython-313-pytest-8.0.0.pyc (2.0 KB)
+│       │   ├── TC-03.cpython-313-pytest-8.0.0.pyc (1.8 KB)
+│       │   ├── TC-04_Validate_Information.cpython-313-pytest-8.0.0.pyc (2.1 KB)
+│       │   ├── TC-04.cpython-313-pytest-8.0.0.pyc (1.8 KB)
+│       │   ├── TC-05_Edit_Employee.cpython-313-pytest-8.0.0.pyc (2.1 KB)
+│       │   ├── TC-05.cpython-313-pytest-8.0.0.pyc (1.9 KB)
+│       │   ├── TC-06_Delete_Employee.cpython-313-pytest-8.0.0.pyc (2.1 KB)
+│       │   ├── TC-06.cpython-313-pytest-8.0.0.pyc (1.9 KB)
+│       │   ├── test_dashboard.cpython-313-pytest-8.0.0.pyc (1.6 KB)
+│       │   └── test_login.cpython-313-pytest-8.0.0.pyc (1.8 KB)
+│       ├── TC-01_Add_Employee_No_Deps.py (0.9 KB)
+│       ├── TC-02_Add_Employee_SIngle_Dep.py (0.9 KB)
+│       ├── TC-03_Add_Employee_Multiple_Deps.py (0.9 KB)
+│       ├── TC-04_Validate_Information.py (0.9 KB)
+│       ├── TC-05_Edit_Employee.py (0.9 KB)
+│       └── TC-06_Delete_Employee.py (1.0 KB)
+├── conftest.py (0.2 KB)
+├── pytest.ini (0.9 KB)
+└── requirements.txt (0.7 KB)
 
 
 
