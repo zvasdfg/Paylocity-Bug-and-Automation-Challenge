@@ -94,133 +94,107 @@ These documents describe:
 ## 📂 Project Structure
 
 ```text
-<<<<<<< HEAD
-Paylocity/
 ├── Bugs/
 │   ├── API/
-│   │   ├── BUG-001.txt
-│   │   ├── BUG-002.txt
-│   │   ├── BUG-003.txt
-│   │   ├── BUG-004.txt
-│   │   ├── BUG-005.txt
-│   │   ├── BUG-006.txt
-│   │   ├── BUG-007.txt
-│   │   ├── BUG-008.txt
-│   │   ├── BUG-009.txt
-│   │   ├── BUG-010.txt
-│   ├── UI/
-│   │   ├── BUG-001.txt
-│   │   ├── BUG-002.txt
-│   │   ├── BUG-003.txt
-│   │   ├── BUG-004.txt
-│   │   ├── BUG-005.txt
-│   │   ├── BUG-006.txt
-│   │   ├── BUG-007.txt
-│   │   ├── BUG-008.txt
-├── Test Cases/
-│   ├── API/
-│   │   ├── TC-API-EMP-001.xlsx
-│   │   ├── TC-API-EMP-002.xlsx
-│   │   ├── TC-API-EMP-003.xlsx
-│   │   ├── TC-API-EMP-004.xlsx
-│   │   ├── TC-API-EMP-005.xlsx
-│   │   ├── TC-API-EMP-006.xlsx
-│   │   ├── TC-API-EMP-007.xlsx
-│   │   ├── TC-API-EMP-008.xlsx
-│   │   ├── TC-API-EMP-009.xlsx
-│   │   ├── TC-API-EMP-010.xlsx
-│   │   ├── TC-API-EMP-011.xlsx
-│   │   ├── TC-API-EMP-012.xlsx
-│   │   ├── TC-API-EMP-013.xlsx
-│   │   ├── TC-API-EMP-014.xlsx
-│   │   ├── TC-API-EMP-015.xlsx
-│   ├── UI/
-│   │   ├── TC-01 Add employee with no dependents.xlsx
-│   │   ├── TC-02 Add employee with one dependent.xlsx
-│   │   ├── TC-03 Add employee with multiple dependents.xlsx
-│   │   ├── TC-04 Validate paycheck deduction calculation.xlsx
-│   │   ├── TC-05 Edit employee dependents.xlsx
-│   │   ├── TC-06 Delete employee.xlsx
-│   │   ├── TC-07 Add employee with negative dependents.xlsx
-│   │   ├── TC-08 Add employee with very large number of dependents.xlsx
-├── Paylocity-automation-framework/
-│   ├── .env
-│   ├── pytest.ini
-│   ├── README.md
-│   ├── requirements.txt
+│   │   ├── BUG-001_Retrieve_Employee_By_Non-Existing_ID_Returns_Server_Error_Instead_Of_404.md (0.8 KB)
+│   │   ├── BUG-002_Updating_Salary_Via_PUT_Is_Ignored_Without_Returning_Any_Validation_Error.md (0.8 KB)
+│   │   ├── BUG-003_Salary_Can_Be_Overridden_Via_PUT_Despite_Fixed_Business_Rules.md (0.7 KB)
+│   │   ├── BUG-004_Updating_Employee_Without_ID_Is_Not_Allowed_But_API_Does_Not_Return_Descriptive_Error.md (0.7 KB)
+│   │   ├── BUG-005_Deleting_Employee_With_Non-Existing_ID_Returns_Success_Without_Indicating_Resource_Not_Found.md (0.7 KB)
+│   │   ├── BUG-006_API_Allows_Negative_Salary_Values_Without_Validation_Error.md (0.7 KB)
+│   │   ├── BUG-007_Read-Only_Fields_Can_Be_Sent_In_POST_Or_PUT_Requests_Without_Validation_Feedback.md (0.7 KB)
+│   │   ├── BUG-008_API_Error_Responses_Are_Inconsistent_And_Lack_A_Standard_Structure.md (0.7 KB)
+│   │   ├── BUG-009_Dependent_Values_Below_The_Minimum_Allowed_Limit_Are_Rejected_Without_Proper_Error_Message.md (0.6 KB)
+│   │   ├── BUG-010_Dependent_Values_Above_The_Maximum_Allowed_Limit_Are_Rejected_Without_Proper_Error_Message.md (0.7 KB)
+│   │   └── Employees API – Defect Analysis Report.md (6.3 KB)
+│   └── UI/
+│       ├── Benefits Dashboard – UX & Business Rule Defect Report.md (7.1 KB)
+│       ├── BUG-001_No_Validation_Exists_For_Maximum_Number_Of_Dependents_Max_32.md (0.8 KB)
+│       ├── BUG-002_Missing_Warning_When_Benefits_Significantly_Reduce_Net_Pay.md (0.7 KB)
+│       ├── BUG-003_Ambiguity_In_Financial_Field_Pay-Period_Labeling.md (0.6 KB)
+│       ├── BUG-004_No_Breakdown_Provided_For_Benefits_Cost_Calculation.md (0.5 KB)
+│       ├── BUG-005_Action_Icons_Are_Missing_Text_Labels_And_Accessibility_Support.md (0.5 KB)
+│       ├── BUG-006_Full_GUID_Displayed_In_ID_Column_Reduces_Table_Readability.md (0.4 KB)
+│       ├── BUG-007_Negative_Dependent_Values_Are_Not_Allowed_But_No_Validation_Error_Is_Displayed.md (0.9 KB)
+│       ├── BUG-008_Dependent_Values_Above_The_Maximum_Allowed_Limit_Are_Rejected_Without_User_Feedback.md (0.9 KB)
+│       ├── BUG-009_Login_With_Unauthorized_User_Results_In_HTTP_405_Error_Instead_Of_Proper_Access_Handling.md (1.1 KB)
+│       ├── image-1.png (85.1 KB)
+│       ├── image-2.png (18.5 KB)
+│       ├── image-3.png (82.6 KB)
+│       ├── image-4.png (4.7 KB)
+│       ├── image-5.png (29.0 KB)
+│       ├── image-6.png (92.3 KB)
+│       ├── image-7.png (83.4 KB)
+│       ├── image-8.png (18.6 KB)
+│       └── image.png (84.1 KB)
+├── paylocity-automation-framework/
+│   ├── logs/
 │   ├── src/
 │   │   ├── config/
-│   │   │   ├── config.yaml
-│   │   │   ├── environment.py
+│   │   │   ├── config.yaml (0.2 KB)
+│   │   │   └── environment.py (1.5 KB)
 │   │   ├── core/
-│   │   │   ├── api_client.py
-│   │   │   ├── base_page.py
-│   │   │   ├── driver_factory.py
-│   │   │   ├── __init__.py
+│   │   │   ├── __init__.py (0.0 KB)
+│   │   │   ├── base_page.py (0.6 KB)
+│   │   │   └── driver_factory.py (0.6 KB)
 │   │   ├── pages/
-│   │   │   ├── dashboard_page.py
-│   │   │   ├── login_page.py
-│   │   ├── services/
-│   │   │   ├── employee_api.py
+│   │   │   ├── dashboard_page.py (3.5 KB)
+│   │   │   └── login_page.py (0.5 KB)
 │   │   ├── utils/
-│   │   │   ├── assertions.py
-│   │   │   ├── logger.py
-│   │   ├── __init__.py
+│   │   │   ├── assertions.py (3.0 KB)
+│   │   │   └── logger.py (1.2 KB)
+│   │   └── __init__.py (0.0 KB)
 │   ├── tests/
 │   │   ├── api/
-│   │   │   ├── TC-API-EMP-01.py
-│   │   │   ├── TC-API-EMP-02.py
-│   │   │   ├── TC-API-EMP-03.py
-│   │   │   ├── TC-API-EMP-04.py
-│   │   │   ├── TC-API-EMP-05.py
-│   │   │   ├── TC-API-EMP-07.py
-│   │   │   ├── TC-API-EMP-08.py
-│   │   │   ├── TC-API-EMP-10.py
-│   │   ├── ui/
-│   │   │   ├── TC-01.py
-│   │   │   ├── TC-02.py
-│   │   │   ├── TC-03.py
-│   │   │   ├── TC-04.py
-│   │   │   ├── TC-05.py
-│   │   │   ├── TC-06.py
-│   │   │   ├── test_login.py
-
-=======
-├── src/
-│   ├── config/
-│   ├── core/
-│   │   ├── __init__.py (0.0 KB)
-│   │   ├── base_page.py (0.6 KB)
-│   │   └── driver_factory.py (0.6 KB)
-│   ├── pages/
-│   │   ├── dashboard_page.py (3.5 KB)
-│   │   └── login_page.py (0.5 KB)
-│   ├── utils/
-│   │   ├── assertions.py (3.0 KB)
-│   │   └── logger.py (1.2 KB)
-│   └── __init__.py (0.0 KB)
-├── tests/
-│   ├── api/
-│   │   ├── TC-API-EMP-01_Create_Employee_Mandatory_Data.py (1.9 KB)
-│   │   ├── TC-API-EMP-02_Create_Employee_Max_Dependants.py (1.9 KB)
-│   │   ├── TC-API-EMP-03_Create_Employee_Negative_Dependants.py (1.3 KB)
-│   │   ├── TC-API-EMP-04_Create_Employee_Overflow_Dependants.py (1.3 KB)
-│   │   ├── TC-API-EMP-05_Get_Employee_List.py (1.2 KB)
-│   │   ├── TC-API-EMP-07_Create_Employee_WIthout_Mandatory_Data.py (1.8 KB)
-│   │   ├── TC-API-EMP-08_Get_Single_Employee.py (1.6 KB)
-│   │   └── TC-API-EMP-10_Modify_Existing_Employee.py (1.6 KB)
-│   └── ui/
-│       ├── TC-01_Add_Employee_No_Deps.py (0.9 KB)
-│       ├── TC-02_Add_Employee_SIngle_Dep.py (0.9 KB)
-│       ├── TC-03_Add_Employee_Multiple_Deps.py (0.9 KB)
-│       ├── TC-04_Validate_Information.py (0.9 KB)
-│       ├── TC-05_Edit_Employee.py (0.9 KB)
-│       └── TC-06_Delete_Employee.py (1.0 KB)
-├── conftest.py (0.2 KB)
-├── pytest.ini (0.9 KB)
-└── requirements.txt (0.7 KB)
->>>>>>> 74ba17043a5b629f768b856dd8c0854999b03b51
-
+│   │   │   ├── TC-API-EMP-01_Create_Employee_Mandatory_Data.py (1.9 KB)
+│   │   │   ├── TC-API-EMP-02_Create_Employee_Max_Dependants.py (1.9 KB)
+│   │   │   ├── TC-API-EMP-03_Create_Employee_Negative_Dependants.py (1.3 KB)
+│   │   │   ├── TC-API-EMP-04_Create_Employee_Overflow_Dependants.py (1.3 KB)
+│   │   │   ├── TC-API-EMP-05_Get_Employee_List.py (1.2 KB)
+│   │   │   ├── TC-API-EMP-07_Create_Employee_WIthout_Mandatory_Data.py (1.8 KB)
+│   │   │   ├── TC-API-EMP-08_Get_Single_Employee.py (1.6 KB)
+│   │   │   └── TC-API-EMP-10_Modify_Existing_Employee.py (1.6 KB)
+│   │   └── ui/
+│   │       ├── TC-01_Add_Employee_No_Deps.py (0.9 KB)
+│   │       ├── TC-02_Add_Employee_SIngle_Dep.py (0.9 KB)
+│   │       ├── TC-03_Add_Employee_Multiple_Deps.py (0.9 KB)
+│   │       ├── TC-04_Validate_Information.py (0.9 KB)
+│   │       ├── TC-05_Edit_Employee.py (0.9 KB)
+│   │       └── TC-06_Delete_Employee.py (1.0 KB)
+│   ├── venv/
+│   ├── conftest.py (0.2 KB)
+│   ├── pytest.ini (0.9 KB)
+│   └── requirements.txt (0.7 KB)
+├── Test Cases/
+│   ├── API/
+│   │   ├── TC-API-EMP-001.xlsx (9.1 KB)
+│   │   ├── TC-API-EMP-002.xlsx (9.1 KB)
+│   │   ├── TC-API-EMP-003.xlsx (9.0 KB)
+│   │   ├── TC-API-EMP-004.xlsx (9.0 KB)
+│   │   ├── TC-API-EMP-005.xlsx (9.0 KB)
+│   │   ├── TC-API-EMP-006.xlsx (9.1 KB)
+│   │   ├── TC-API-EMP-007.xlsx (8.9 KB)
+│   │   ├── TC-API-EMP-008.xlsx (8.9 KB)
+│   │   ├── TC-API-EMP-009.xlsx (8.9 KB)
+│   │   ├── TC-API-EMP-010.xlsx (9.0 KB)
+│   │   ├── TC-API-EMP-011.xlsx (8.9 KB)
+│   │   ├── TC-API-EMP-012.xlsx (8.9 KB)
+│   │   ├── TC-API-EMP-013.xlsx (8.9 KB)
+│   │   ├── TC-API-EMP-014.xlsx (8.9 KB)
+│   │   └── TC-API-EMP-015.xlsx (9.0 KB)
+│   └── UI/
+│       ├── TC-01 Add employee with no dependents.xlsx (9.4 KB)
+│       ├── TC-02 Add employee with one dependent.xlsx (9.3 KB)
+│       ├── TC-03 Add employee with multiple dependents.xlsx (9.2 KB)
+│       ├── TC-04 Validate paycheck deduction calculation.xlsx (9.0 KB)
+│       ├── TC-05 Edit employee dependents.xlsx (9.1 KB)
+│       ├── TC-06 Delete employee.xlsx (9.0 KB)
+│       ├── TC-07 Add employee with negative dependents.xlsx (8.9 KB)
+│       └── TC-08 Add employee with very large number of dependents.xlsx (8.9 KB)
+├── Benefits Dashboard – UX & Business Rule Defect Report.md (7.1 KB)
+├── Employees API – Defect Analysis Report.md (6.3 KB)
+├── project_structure.md (174.0 KB)
+└── README.md (9.6 KB)
 
 
 ```
