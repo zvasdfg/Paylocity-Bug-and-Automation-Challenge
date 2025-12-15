@@ -95,55 +95,20 @@ These documents describe:
 
 ```text
 ├── src/
-│   ├── __pycache__/
-│   │   └── __init__.cpython-313.pyc (0.2 KB)
 │   ├── config/
-│   │   ├── __pycache__/
-│   │   │   └── environment.cpython-313.pyc (2.6 KB)
-│   │   ├── config.yaml (0.2 KB)
-│   │   └── environment.py (1.5 KB)
 │   ├── core/
-│   │   ├── __pycache__/
-│   │   │   ├── __init__.cpython-313.pyc (0.2 KB)
-│   │   │   ├── api_client.cpython-313.pyc (1.0 KB)
-│   │   │   ├── base_page.cpython-313.pyc (1.8 KB)
-│   │   │   └── driver_factory.cpython-313.pyc (1.2 KB)
 │   │   ├── __init__.py (0.0 KB)
 │   │   ├── base_page.py (0.6 KB)
 │   │   └── driver_factory.py (0.6 KB)
 │   ├── pages/
-│   │   ├── __pycache__/
-│   │   │   ├── dashboard_page.cpython-313.pyc (6.1 KB)
-│   │   │   └── login_page.cpython-313.pyc (1.4 KB)
 │   │   ├── dashboard_page.py (3.5 KB)
 │   │   └── login_page.py (0.5 KB)
 │   ├── utils/
-│   │   ├── __pycache__/
-│   │   │   ├── assertions.cpython-313.pyc (4.1 KB)
-│   │   │   └── logger.cpython-313.pyc (2.1 KB)
 │   │   ├── assertions.py (3.0 KB)
 │   │   └── logger.py (1.2 KB)
 │   └── __init__.py (0.0 KB)
 ├── tests/
 │   ├── api/
-│   │   ├── __pycache__/
-│   │   │   ├── TC-API-EMP-01_Create_Employee_Mandatory_Data.cpython-313-pytest-8.0.0.pyc (6.2 KB)
-│   │   │   ├── TC-API-EMP-01.cpython-313-pytest-8.0.0.pyc (6.2 KB)
-│   │   │   ├── TC-API-EMP-02_Create_Employee_Max_Dependants.cpython-313-pytest-8.0.0.pyc (6.2 KB)
-│   │   │   ├── TC-API-EMP-02.cpython-313-pytest-8.0.0.pyc (6.0 KB)
-│   │   │   ├── TC-API-EMP-03_Create_Employee_Negative_Dependants.cpython-313-pytest-8.0.0.pyc (3.0 KB)
-│   │   │   ├── TC-API-EMP-03.cpython-313-pytest-8.0.0.pyc (2.7 KB)
-│   │   │   ├── TC-API-EMP-04_Create_Employee_Overflow_Dependants.cpython-313-pytest-8.0.0.pyc (3.0 KB)
-│   │   │   ├── TC-API-EMP-04.cpython-313-pytest-8.0.0.pyc (2.7 KB)
-│   │   │   ├── TC-API-EMP-05_Get_Employee_List.cpython-313-pytest-8.0.0.pyc (2.9 KB)
-│   │   │   ├── TC-API-EMP-05.cpython-313-pytest-8.0.0.pyc (2.6 KB)
-│   │   │   ├── TC-API-EMP-07_Create_Employee_WIthout_Mandatory_Data.cpython-313-pytest-8.0.0.pyc (8.3 KB)
-│   │   │   ├── TC-API-EMP-07.cpython-313-pytest-8.0.0.pyc (8.1 KB)
-│   │   │   ├── TC-API-EMP-08_Get_Single_Employee.cpython-313-pytest-8.0.0.pyc (6.0 KB)
-│   │   │   ├── TC-API-EMP-08.cpython-313-pytest-8.0.0.pyc (5.8 KB)
-│   │   │   ├── TC-API-EMP-10_Modify_Existing_Employee.cpython-313-pytest-8.0.0.pyc (5.4 KB)
-│   │   │   ├── TC-API-EMP-10.cpython-313-pytest-8.0.0.pyc (5.2 KB)
-│   │   │   └── test_employee_api.cpython-313-pytest-8.0.0.pyc (6.0 KB)
 │   │   ├── TC-API-EMP-01_Create_Employee_Mandatory_Data.py (1.9 KB)
 │   │   ├── TC-API-EMP-02_Create_Employee_Max_Dependants.py (1.9 KB)
 │   │   ├── TC-API-EMP-03_Create_Employee_Negative_Dependants.py (1.3 KB)
@@ -153,21 +118,6 @@ These documents describe:
 │   │   ├── TC-API-EMP-08_Get_Single_Employee.py (1.6 KB)
 │   │   └── TC-API-EMP-10_Modify_Existing_Employee.py (1.6 KB)
 │   └── ui/
-│       ├── __pycache__/
-│       │   ├── TC-01_Add_Employee_No_Deps.cpython-313-pytest-8.0.0.pyc (2.0 KB)
-│       │   ├── TC-01.cpython-313-pytest-8.0.0.pyc (1.8 KB)
-│       │   ├── TC-02_Add_Employee_SIngle_Dep.cpython-313-pytest-8.0.0.pyc (2.0 KB)
-│       │   ├── TC-02.cpython-313-pytest-8.0.0.pyc (1.8 KB)
-│       │   ├── TC-03_Add_Employee_Multiple_Deps.cpython-313-pytest-8.0.0.pyc (2.0 KB)
-│       │   ├── TC-03.cpython-313-pytest-8.0.0.pyc (1.8 KB)
-│       │   ├── TC-04_Validate_Information.cpython-313-pytest-8.0.0.pyc (2.1 KB)
-│       │   ├── TC-04.cpython-313-pytest-8.0.0.pyc (1.8 KB)
-│       │   ├── TC-05_Edit_Employee.cpython-313-pytest-8.0.0.pyc (2.1 KB)
-│       │   ├── TC-05.cpython-313-pytest-8.0.0.pyc (1.9 KB)
-│       │   ├── TC-06_Delete_Employee.cpython-313-pytest-8.0.0.pyc (2.1 KB)
-│       │   ├── TC-06.cpython-313-pytest-8.0.0.pyc (1.9 KB)
-│       │   ├── test_dashboard.cpython-313-pytest-8.0.0.pyc (1.6 KB)
-│       │   └── test_login.cpython-313-pytest-8.0.0.pyc (1.8 KB)
 │       ├── TC-01_Add_Employee_No_Deps.py (0.9 KB)
 │       ├── TC-02_Add_Employee_SIngle_Dep.py (0.9 KB)
 │       ├── TC-03_Add_Employee_Multiple_Deps.py (0.9 KB)
