@@ -245,7 +245,7 @@ Make sure you have **Google Chrome installed**.
 ### Make sure to be in the right location:
 
 ```bash
-velocity-automation-framework
+paylocity-automation-framework
 ```
 ### Run all tests
 
